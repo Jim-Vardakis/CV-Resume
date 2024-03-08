@@ -1,0 +1,351 @@
+% !TEX program = pdflatex
+% !TEX TS-program = pdflatex
+% !BIB TS-program = biber
+% !BIB program = biber
+
+\documentclass[11pt]{amsart} %%%%%%%%%%%%%%%% Always have the preamble organised!! % stop at column 45
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Packages--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xparse} %%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin=2.9cm]{geometry} %%%%%%%%%
+\usepackage{amsthm} %%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath} %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb} %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{extarrows} %%%%%%%%%%%%%%%%%%%%%% enables \x...arrow[<subtext>]{<supertext>}
+\usepackage{enumerate} %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{relsize} %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{comment} %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{marginnote} %%%%%%%%%%%%%%%%%%%%% includes command \marginnote{text}
+\usepackage[font={small}]{caption} %%%%%%%%%%
+\usepackage{subcaption} %%%%%%%%%%%%%%%%%%%%%
+%						%%%%%%%%%%%%%%%%%%%%% \captionsetup[figure]{labelfont=it}
+%						%%%%%%%%%%%%%%%%%%%%% \captionsetup{labelformat=empty,labelsep=none}
+%\usepackage{float} %%%%%%%%%%%%%%%%%%%%%%%%%% provides additional positioning parametres
+\usepackage{wrapfig} %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{subfiles} %%%%%%%%%%%%%%%%%%%%%%% include exterior files with \subfile{<child_name>}
+%					  %%%%%%%%%%%%%%%%%%%%%%% exterior files start with \documentclass[<parent_name.tex>]{subfiles}
+%					  %%%%%%%%%%%%%%%%%%%%%%% 							\begin{document} <body> \end{document}
+\usepackage{environ} %%%%%%%%%%%%%%%%%%%%%%%% provides the commands: \NewEnvirom{cmd}{<code>}[<final_code>], \BODY,
+%					 %%%%%%%%%%%%%%%%%%%%%%%% 	\environbodyname{<name>} and \environfinalcode{<code>}
+\usepackage{multicol} %%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tabularx} %%%%%%%%%%%%%%%%%%%%%%% creates the tabularx environment
+%					  %%%%%%%%%%%%%%%%%%%%%%% {>{\centering\arraybackslash}X|X} ==> "centred column|left-aligned column"
+%					  %%%%%%%%%%%%%%%%%%%%%%% use "aligned" environment within the standard "tabular"
+\usepackage{xifthen} %%%%%%%%%%%%%%%%%%%%%%%% \ifthenelse{1=1}{<when_true>}{<when_false>}
+\usepackage{xcolor} %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Languages--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% enables greek literals in document source
+\usepackage[LGR,T1]{fontenc} %%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc} %%%%%%%%%%%%%%%%%
+\usepackage{lmodern} %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[greek,english]{babel} %%%%%%%%%%% The latter language is the default. -- DO NOT change this. --
+\usepackage{alphabeta} %%%%%%%%%%%%%%%%%%%%%%
+
+%\hyphenation{hy-phen-a-tion} %%%%%%%%%%%%%%%% decsribe exceptions to word hyphenation
+%							%%%%%%%%%%%%%%%%% hy\-phen\-a\-tion also works for in-document purposes
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Bibliography--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{csquotes} %%%%%%%%%%%%%%%%%%%%%%% -- For files in greek add [style=greek] --
+\usepackage[doi=true,isbn=true,giveninits=true,maxbibnames=99,backend=biber]{biblatex}	%%
+\usepackage{hyperref} %%%%%%%%%%%%%%%%%%%%%%% \texorpdfstring{<code>}{<best_string_approximation_of_<code>>}
+%						%%%%%%%%%%%%%%%%%%%%% Always have hyperref > cleveref as the very last packages to call!
+\usepackage{xurl}	%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{colorlinks=true,linktoc=all,urlcolor={blue!80!black},citecolor={green!60!black}} %%
+\usepackage{cleveref} %%%%%%%%%%%%%%%%%%%%%%% enables \Cref{<label>}, \cref{<label>}
+%					  %%%%%%%%%%%%%%%%%%%%%%% \nameref{<label>} retrieves name of thm (pre-included)
+
+\addbibresource{../var_vol_bibliography.bib} %% specified .bib directory
+%\addbibresource{var_vol_bibliography.bib} %%% in case the .bib file is in the same folder
+%                                    %%%%%%%% always clean auxiliary files after changing specified files or paths
+\nocite{BarBelBorFed2017,BelBorFed2019,Car1952,CimRos2000} %%%%%%%%%%%%%%%%%%%%% add non-cited references
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Numbering--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% for nested enumerate environmnets counters read: enumi, enumii, etc.
+%\setcounter{page}{0} %%%%%%%%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty} %%%%%%%%%%%%%%%%%%%%%%%
+%\pagestyle{myheadings} %%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{<counter>}{-1} %%%%%%%%%%%%%%%%%%
+%							%%%%%%%%%%%%%%%%% if document =book, counter =chapter
+%							%%%%%%%%%%%%%%%%% if document =article, counter =section
+
+%\renewcommand{\theequation}{\thesection.\arabic{equation}} % forces equations <counter> to include section no
+%															% <counter> does not reset for each section
+\newtheorem{theorem}{Theorem}%[section] %%%%%%%%% [<counter>]
+%									 %%%%%%%%%%% if document =book, counter =chapter
+%									 %%%%%%%%%%% if document =article, counter =section
+\newtheorem{lem}[theorem]{Lemma} %%%%%%%%%%%%%%%
+\newtheorem{clm}[theorem]{Claim} %%%%%%%%%%%%%%%
+\newtheorem{prop}[theorem]{Proposition} %%%%%%%%
+\newtheorem{cor}[theorem]{Corollary} %%%%%%%%%%%
+\newtheorem*{theorem*}{Theorem} %%%%%%%%%%%%%%%%
+\newtheorem*{lem*}{Lemma} %%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{clm*}{Claim} %%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem*{prop*}{Proposition} %%%%%%%%%%%%%%%
+\newtheorem*{cor*}{Corollary} %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{remark} %%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{rem}[theorem]{Remark} %%%%%%%%%%%%%%
+\newtheorem{rems}[theorem]{Remarks} %%%%%%%%%%%%
+\newtheorem{quest}{Question} %%%%%%%%%%%%%%%%%%%
+\newtheorem*{rem*}{Remark} %%%%%%%%%%%%%%%%%%%%%
+\newtheorem*{rems*}{Remarks} %%%%%%%%%%%%%%%%%%%
+\newtheorem*{quest*}{Question} %%%%%%%%%%%%%%%%%
+\newtheorem*{notat*}{Notations} %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition} %%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{ex}[theorem]{Example} %%%%%%%%%%%%%%
+\newtheorem{defin}[theorem]{Definition} %%%%%%%%
+\newtheorem*{ex*}{Example} %%%%%%%%%%%%%%%%%%%%%
+\newtheorem*{defin*}{Definition} %%%%%%%%%%%%%%%
+
+\numberwithin{equation}{section} %%%%%%%%%%%%%%% <counter> resets for each section
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Abbreviations--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\doublevowelhyphen\H %%%%%%%%%%%%%%%%%%%%
+\def \A{{\mathbb{A}}}	\def \G{{\mathbb{G}}}	\def \M{{\mathbb{M}}}	\def \S{{\mathbb{S}}}	\def \Y{{\mathbb{Y}}}
+\def \B{{\mathbb{B}}}	\def \H{{\mathbb{H}}}	\def \N{{\mathbb{N}}}	\def \T{{\mathbb{T}}}	\def \Z{{\mathbb{Z}}}
+\def \C{{\mathbb{C}}}	\def \I{{\mathbb{I}}}	\def \O{{\mathbb{O}}}	\def \U{{\mathbb{U}}}
+\def \D{{\mathbb{D}}}	\def \J{{\mathbb{J}}}	\def \P{{\mathbb{P}}}	\def \V{{\mathbb{V}}}
+\def \E{{\mathbb{E}}}	\def \K{{\mathbb{K}}}	\def \Q{{\mathbb{Q}}}	\def \W{{\mathbb{W}}}
+\def \F{{\mathbb{F}}}	\def \LL{{\mathbb{L}}}	\def \R{{\mathbb{R}}}	\def \X{{\mathbb{X}}}
+
+\def \cA{{\mathcal{A}}}	\def \cG{{\mathcal{G}}}	\def \cM{{\mathcal{M}}}	\def \cS{{\mathcal{S}}}	\def \cY{{\mathcal{Y}}}
+\def \cB{{\mathcal{B}}}	\def \cH{{\mathcal{H}}}	\def \cN{{\mathcal{N}}}	\def \cT{{\mathcal{T}}}	\def \cZ{{\mathcal{Z}}}
+\def \cC{{\mathcal{C}}}	\def \cI{{\mathcal{I}}}	\def \cO{{\mathcal{O}}}	\def \cU{{\mathcal{U}}}
+\def \cD{{\mathcal{D}}}	\def \cJ{{\mathcal{J}}}	\def \cP{{\mathcal{P}}}	\def \cV{{\mathcal{V}}}
+\def \cE{{\mathcal{E}}}	\def \cK{{\mathcal{K}}}	\def \cQ{{\mathcal{Q}}}	\def \cW{{\mathcal{W}}}
+\def \cF{{\mathcal{F}}}	\def \cL{{\mathcal{L}}}	\def \cR{{\mathcal{R}}}	\def \cX{{\mathcal{X}}}
+
+\newcommand{\xx}{\times} %%%%%%%%%%%%%%%%%%%% cartesian product
+\newcommand{\bd}{\partial} %%%%%%%%%%%%%%%%%% boundary
+\DeclareMathOperator{\supp}{supp} %%%%%%%%%%% support
+\DeclareMathOperator{\dist}{dist} %%%%%%%%%%% distance
+\renewcommand{\Re}{\operatorname{Re}} %%%%%%% real part
+\renewcommand{\Im}{\operatorname{Im}} %%%%%%% imaginary part
+\newcommand{\clos}[1]{\bar{#1}} %%%%%%%%%%%%% closure of a set
+\let\comp\circ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% composition of two functions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\0}[1]{\overline{#1}} %%%%%%%%%%% complex conjugate
+\newcommand{\1}[1]{\tilde{#1}} %%%%%%%%%%%%%% tilde
+\newcommand{\2}[1]{{}_{|#1}} %%%%%%%%%%%%%%%% restriction symbol
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\let\v\nonmathmodecheck %%%%%%%%%%%%%%%%%%%%
+\renewcommand{\v}[1]{\check{#1}} %%%%%%%%%%%% inverse Fourier transform (use only in math mode)
+\newcommand{\what}[1]{\widehat{#1}} %%%%%%%%% widehat
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\norm}[1]{\left\|#1\right\|} %%%% norm of function
+\newcommand{\inner}[2]{\left\langle #1\,; #2 \right\rangle} % inner product
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\inline}[1]{\quad\text{#1}\quad} %% include text inbetween math
+\newcommand{\afterline}[1]{\qquad\text{#1}\ } %% include text after math
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\var}{\,\cdot\,} %%%%%%%%%%%%%%%% blank function variable
+\newcommand{\such}{\; : \;} %%%%%%%%%%%%%%%%% set conditional separator
+
+\let\xiff\xLeftrightarrow %%%%%%%%%%%%%%%%%%% rescaled \iff arrow
+
+%% \frac
+%% \tfrac
+%% \dfrac
+%% \displaystyle\lim_%_{\substack{<line>\\<line>}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Tex-Constructions--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *instructions to be added*
+%\newcommand*{\ifempty}[3]{\ifthenelse{\isempty{#1}}{#2}{#3}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% partial derivative and fraction-like partial derivative
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% (requires the xparse package)
+%\NewDocumentCommand{\parder}{mo}{%%%%%%%%%%%% \parder{<variable>}[<degree>]
+	%	\IfNoValueTF{#2}
+	%	{\frac{\partial}{\partial{#1}}}
+	%	{\frac{\partial^{#2}}{\partial{#1}^{#2}}}
+	%}
+%
+%\NewDocumentCommand{\fparder}{mom}{%%%%%%%%%% \parder{<variable>}[<degree>]{<function>}
+	%	\IfNoValueTF{#2}
+	%	{\frac{\partial{#3}}{\partial{#1}}}
+	%	{\frac{\partial^{#2}{#3}}{\partial{#1}^{#2}}}
+	%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Miscellaneous--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\oldin\in %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareRobustCommand{\in}{\oldin\nolinebreak[4]} % "belong" symbol doesn't break the line
+\let\indentedrule\hrulefill %%%%%%%%%%%%%%%%%
+\renewcommand{\hrulefill}{\noindent\indentedrule} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--TexStudio-Shortcuts--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% F1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% compiles code, outputs .pdf file
+%% F2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% compiles code, crashes on non-existent graphics
+%% F8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% complies bibliography file
+%% F12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% creates index
+%% Ctrl+R %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% replace text
+%% Ctrl+T/U %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% comments/uncomments selection
+%% F7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% redirects cursor to .pdf file
+%% Ctrl+right_click %%%%%%%%%%%%%%%%%%%%%%%%% redirects cursor to source code
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Current-file-specifics--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\proj}{proj} %%%%%%%%%%%
+\DeclareMathOperator{\Fav}{Fav} %%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Title-Page--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \maketitle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% creates a title page
+\title{Research Statement}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% author amsart template for each author
+\author{Vardakis Dimitris}
+\address{Department of Mathematics, Michigan State University, East Lansing, Michigan 48824}
+%\curraddr{}
+\email{vardakis@msu.edu}
+%\thanks{}
+
+
+
+\begin{document}
+
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+My research is focused on Complex Analysis, Geometric Measure Theory and Probability. I also retain a strong background in Harmonic Analysis and Boolean functions. I have worked in three main separate projects so far which I will explain below.
+
+I was able to estimate the rate of decay of the Favard length for certain random Cantor-like planar set, which directly relates to the Buffon needle problem. This is \Cref{sec:Buffon}. In \Cref{sec:Sakai}, I explain how I tried to relax the boundary condition for a Schwarz function to obtain similar smoothness results for the boundary of its domain. The problems I considered have a strong connection with \emph{Nevanlinna domains}, \emph{model spaces}, and free boundary problems. Last in \Cref{sec:Marstrand}, by imposing certain ``intersecting'' conditions on a planar curves and graphs, I could describe in more detail their geometric properties than what one has from Marstrand's and Mattila's theorems.
+
+
+\section{Buffon's Needle Problems for Cantor-like planar sets}	\label{sec:Buffon}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Introduction}
+The \emph{Buffon needle problem} asks the probability that a line dropped randomly on the plane intersects the set $E\subset\D$ provided that it intersects the unit disk $\D$. On the other hand, the \emph{Favard length} of $E$ is defined as
+\[\Fav(E)=\frac{1}{π}\int_0^π|\proj_θE|\,dθ,\]
+where $\proj_θE$ is the projection of $E$ onto a line of slope $\tan θ$. It turns out the above probability for a compact set $E$ is proportional to its Favard length.
+
+For an unrectifiable set $E$ with $\cH^1(E)<\infty$ (where $\cH^1$ is the $1$-dimensional Hausdorff measure), a theorem by Besicovitch says that $\Fav(E)=0$ \cite{Mat1975}, that is, the projection of $E$ on almost every line is $0$. Such an example is the famed $1/4$-corners Cantor set, say $C$, i.e. $\Fav(C)=0$. If we denote by $C_n$ the intermediate steps in $C$'s construction (i.e. $C=\bigcap C_n$), then it natural to ask what is the rate with which $\Fav(C_n)\to 0$ as $n\to\infty$.
+
+This question has gained popularity in recent years, with the best known bounds being $\Fav(C_n)\lesssim_{ε} n^{-1/6+ε}$ \cite{NazPerVol2011} and $\Fav(C_n)\gtrsim n^{-1}\log n$ \cite{BatVol2010}. It is worth mentioning that this lower bound was an improvement to the estimate $\Fav(C_n)\gtrsim 1/n$ by Mattila \cite{Mat1990}, which holds for a wider class of sets. Yet, the exact rate remains unknown.
+
+\medskip
+
+At the same time, Cladek, Davey and Taylor in \cite{ClaDavTay2022} inspired by the \emph{circular} Favard length appearing in \cite{BonVol2010_circular_favard}, introduced the \emph{Favard curve length} where their ``needle'' was a piecewise $C^1$ curve with controlled tangent unit vectors. They derived the exact same bounds as above.
+
+\smallskip
+
+On the other hand, Peres and Solomyak introduced in \cite{PerSol2002} a random version, say $\cR$, of the $1/4$-corners Cantor set $C$ in which the ``child'' square at every step is chosen at random between the four possible ``children'' instead of the same corner at each step; then $\E[\Fav(\cR)]=0$. The authors, inspired by a percolation technique on trees, calculated the rate of decay for the average Favard length to be exactly $\E[\Fav(\cR_n)]\simeq 1/n$, where $\cR=\bigcap\cR_n$.
+
+\subsection*{Results}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Recently in \cite{Zha2019}, S.~Zhang obtained the exact same rate for a disk-like analogue $\cD$ of Peres and Solomyak's random Cantor set constructed by rotating \emph{all} the disks at each step \emph{by a fixed angle} compared to random placement on the dyadic grid. However, his construction is too restricted.
+
+In \cite{VarVol2022ep}, Volberg and I were able to rebuilt his model of randomness, but this time the angles of rotation happen independently for each disk; this is much closer to Peres and Solomyak's construction. If we denote $\cD=\bigcap\cD_n$, we showed the projection of $\cD_{n+1}$ is of square order compared with the projection of $\cD_n$ on the same line. This allowed us to obtain the same exact average decay for the Favard length, that is $\E[\Fav(\cD_n)]\simeq 1/n$.
+
+
+\subsection*{Work in progress and future problems}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+It is natural to ask whether our results along with those of Peres and Solomyak can be extended in higher dimensions. Thankfully, Besicovitch's Theorem \cite{Mat1975} holds in all dimensions and therefore it is possible to construct higher dimensional analogues for both our disk-like and the ``classic'' Cantor sets. In this case, the average should be taken over the corresponding measure for the appropriate Grassmannians. The difficulty here will be to find a convenient way to express the projections of the intermediate steps, but I expect the rate $Cn^{-1}$ of the decay to be the same with the dimension contributing only to the constant.
+
+\smallskip
+
+At the same time, I am planning to investigate how to replicate the result in \cite{ClaDavTay2022} into the random setting, that is, to calculate the average Favard curve length of $\cR$ and of its disk-like analogue $\cD$ we constructed in \cite{VarVol2022ep}. In fact, I expect that certain restrictions on the curvature of the curves in \cite{ClaDavTay2022} can be lifted in the random setting as they were forced by the strict geometric nature of the $1/4$-corners Cantor set. Lifting this to higher dimensions also seems to be a reachable task.
+
+
+\section{Free Boundary Problems and Sakai's Theorem}	\label{sec:Sakai}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Introduction}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Let $Ω$ be a bounded open set on the complex plain, $ζ_0$ a non-isolated boundary point of $Ω$, and $Γ=\bd Ω\cap D(ζ_0,r)$ ($r>0$) a part of the boundary containing $ζ_0$. A \emph{Schwarz function} $S$ on $Ω\cup Γ$ at $ζ_0$ is holomorphic function on $Ω$ which is continuous on $Ω\cup Γ$ and satisfies $S(ζ)=\0{ζ}$ on the boundary piece $Γ$. Schwarz function are of independent interest and are strongly connected with Nevanlinna domains and poly-analytic polynomials, see for example \cite{CarParFed2002,Fed2006}.
+
+In 1991, Sakai gave a complete characterisation of the boundaries of open sets admitting a Schwarz function \cite{Sak1991}. Using topological arguments and the Phragm\'ent-Lindel\"of principle, Sakai was able to prove that the limit $|S(z-ζ_0)/(z-ζ_0)|$ exists and equals 1 while $z\to ζ_0$. Then, this limit along with the residue formula allowed with him to calculate the \enquote{multiplicity} of $ζ_0$ as a zero of $F(z)=(z-ζ_0)S(z-ζ_0)$; turns out it is 1 or 2. Depending on this number and on whether and how $S$ can be extended around $ζ_0$, the boundary $Γ$ has a different shape:
+\begin{theorem}[Sakai '91]	\label{SakTheorem}
+	Set $D=D(ζ_0,r)$. Let $Ω\subset D$ be any open set and $ζ_0$ an accumulation point of its boundary, $Γ=\bd Ω\cap D$. Suppose $S$ is a Schwarz function on $Ω\cup Γ$.	Then, for some small $0<δ\leq r$ one of the following must occur:
+	\begin{enumerate}[(2a)]
+		\item[(1)] $Ω\cap D$ is simply connected and $Γ\cap D$ is a regular real analytic simple arc through $ζ_0$.
+		\item $Γ\cap D$ determines uniquely a regular real analytic arc through $ζ_0$. $Γ\cap D$ is either an infinite proper subset of this arc with $ζ_0$ as an accumulation point or equal to it. Also, $Ω\cap D=D\setminus Γ$.
+		\item $Ω\cap D=Ω_1\cup Ω_2$ where $Ω_1$ and $Ω_2$ are simply connected and $\bd Ω_1\cap D$ and $\bd Ω_2\cap D$ are regular real analytic simple arcs through $ζ_0$ and tangent at $ζ_0$.
+		\item $Ω\cap D$ is simply connected and $Γ\cap D$ is a regular real analytic simple arc except for a cusp at $ζ_0$. The cusp points into $Ω$.
+	\end{enumerate}
+	
+	Conversely, if one of (1), (2a), (2b), or (2c) holds, $Ω$ has a Schwarz function for some $r>0$.
+\end{theorem}
+
+\subsection*{Results}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Restricting to only simply connected domains, I derived similar results with boundary conditions different from $S(ζ)=\0{ζ}$, even though simply-connectedness automatically restricts the possibilities of \Cref{SakTheorem}. The alternative relations considered on $Γ$ were the following and I will present them in order in the subsections to come: $f_1(ζ)=\0{ζ}f_2(ζ)$, $R(ζ)=Φ(ζ,\0{ζ})$, and $\cU/\cV=|A|^2$.
+
+\subsection{Nevanlinna domains and Model spaces}
+First, suppose $f_1,f_2$ are holomorphic functions on $Ω$ continuous up the boundary satisfying $f_1(ζ)=\0{ζ}f_2(ζ)$ on $Γ$. Unless $f_2$ is a polynomial, in which case $f_1/f_2$ is a Schwarz function, the existence of such $f_1,f_2$ is non-trivial.
+
+I showed that for this to happen the ratio $f_1/f_2$ has to admit a Nevanlinna type pseudo-continuation and in turn there has to exist a bounded conformal map $φ:\D\to Ω$ belonging in a model space $K_θ$. Recall that model spaces $K_θ$ are the invariant subspaces of the backwards shift operator. The existence of such conformal map is equivalent to $Ω$ being a Nevanlinna domain \cite{Fed2006,BarFed2011}. However, this might not be possible when $θ$ is has a Blaschke part as Carmona, Paramonov and Fedorovskiy showed with an example in \cite[Example 5.8]{CarParFed2002}, and since we seek for continuity for $f_1$ and $f_2$.
+
+Therefore in \cite{VarVol2021ep_2022}, Volberg and I needed to look for a purely singular inner function $θ$ that would give us the desired bounded conformal map. To do that, we adopted a very clever trip devised by Belov and Fedorovskiy in \cite{BelFed2018} (also found in \cite{BarBelBorFed2017}) which is based on an earlier observation by Dyakonov and Khavinson that if the singular part of $θ$ is supported on Beurling-Carleson set of positive measure, then $K_θ$ contains maps of class $C^\infty(\T)$ \cite{DyaKha2006}.
+
+We were able to show that there exist simply connected domains admitting holomorphic functions $f_1,f_2$ continuous up to the boundary and which satisfy that $f_1(ζ)=\0{ζ}f_2(ζ)$ on the boundary. The boundary itself can be of class $C^\infty$ boundary and yet not real-analytic.
+
+\subsection*{Question} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Interestingly enough, we were not able to produce domains admitting such functions with boundary of a worst class, say $C^1$, Nevanlinna domains which are the image of purely singular inner functions. I suspect that it is in fact \emph{impossible} to do, and this is one of my future projects.
+
+\subsection{Functions holomorphic in two variables}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Second, let $R$ be a holomorphic on $Ω$ continuous on $Ω\cup Γ$, and $Φ$ a holomorphic function of two variables on $\C\xx\C$. If $R$ and $Φ$ satisfy $R(ζ)=Φ(ζ,\0{ζ})$ for $ζ\in Γ$, then what can we say about $Γ$ itself?
+
+By a careful combination of Mergelyan's and Weierstrass' theorems, we are able to approximate $Φ$ through certain polynomials. An analysis on these polynomials revealed that if we exclude from $Γ$ a certain set of zero harmonic measure, then the rest of $Γ$ is in fact a countable union of regular real-analytic arcs, save for possible cusps.
+
+\subsection{Harmonic functions}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+And third, let us consider the following \emph{one-phase boundary problem}. Suppose $\cU$ and $\cV$ are positive harmonic functions on $Ω$ which vanish on a Jordan boundary piece $Γ$. If the ratio $\cU/\cV$ is a real-analytic function on $Γ$, then again what can we say about the smoothness $Γ$? A setup like is possible (also in higher dimensions) thanks to the work of Jerison and Kenig on non-tangentially accessible (NTA) domains \cite{JerKen1982}.
+
+In \cite{VarVol2021ep_2022}, Volberg and I give an independent proof this is possible and also provide an example. Additionally, we show that the boundary in this case is in fact real-analytic, with possible cusps (\Cref{U_V_main_theorem}). Moreover, we give a precise description of when a cusp can or cannot appear.
+
+\begin{theorem} \label{U_V_main_theorem}
+	Let $Ω\subset D(ζ_0,ρ)$ be a simply-connected domain of $\C$ and let $Γ$ be an open Jordan arc of its boundary with $ζ_0\in Γ$. Suppose there are two positive non-proportional harmonic functions $\mathcal{U}$ and $\mathcal{V}$ on $Ω$, continuous on $Ω\cup Γ$ which satisfy
+	\[\mathcal{U}(ζ)=\mathcal{V}(ζ)=0\inline{and}{\mathcal{U}(ζ)}/{\mathcal{V}(ζ)}=|A(ζ)|^2\afterline{for all}ζ\in Γ\]
+	where $A$ is a non-trivial analytic function on a neighbourhood of $Γ$.
+	
+	Then, for all but possibly finitely many points $ζ_0\in Γ$ there exist some small neighbourhood $D$ of $ζ_0$ such that the following holds:
+	\begin{equation*}
+		Γ\cap D\text{ is a regular real-analytic simple arc through }ζ_0\text{ except possibly a cusp at }ζ_0.
+	\end{equation*}
+	The finitely many points around which the above might fail are the points $ζ\in Γ$ where $A'(ζ)=0$.
+\end{theorem}
+
+\smallskip
+
+A summary of these results can be found in \cite{VarVol2021_note} and detailed proofs have been accepted for publication in \cite{VarVol2021ep_2022}.
+
+\subsection*{Questions and future work}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the proof of \Cref{U_V_main_theorem}, I facilitated the properties of the holomorphic function $A$ to construct a Schwarz function. I am interested in working with different boundary conditions. That is, how smooth is the boundary piece $Γ$ if the ratio $\cU/\cV$ is only a $C^\infty$ on $Γ$? What if it is only $C^1$ or in some H{\"o}lder class? In \cite{JerKen1982}, Jerison and Kenig show this is in fact a valid question, and, to my best knowledge, there is no clear answer to this so far.
+
+\smallskip
+
+All the above was done under the assumption that $Ω$ is simply connected. I plan to try and generalise this results to arbitrary (connected) domains. The case of an arbitrary domain $Ω$ and functions $R$ and $Φ$ satisfying $R(ζ)=Φ(ζ,\0{ζ})$ on its boundary would require a careful consideration of covering maps that could reduced the problem back to the simply-connected setup. The case seems to be easier for the problem with the harmonic functions. In fact, I believe it is possible to find small simply connected regions where the above result might still hold. The consideration for Nevanlinna domains seems to be the most cumbersome, but perhaps it is possible reproduce some of the results for model spaces and Nevanlinna domains for non-simply-connected regions.
+
+
+\section{Geometry of planar curves}	\label{sec:Marstrand}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Introduction}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Marstrand's and Mattila's work (in \cite{Mar1954} and \cite{Mat1975} respectively) shows that if a Borel set in $\R^n$ has an at most countable intersection with whole cone of lines and their parallel shifts, then it is of Hausdorff dimension at most $n-1$. This drop in dimension also appears in perturbation theory of self-adjoint operators and in particular for exceptional perturbations \cite{LiaTreVol2020}. These considerations urge one to understand the structure of such sets.
+
+\subsection*{Results}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Inspired by such problems, Volberg and I restricted the conditions in Marstrand's theorem to obtain more precise description of certain curves \cite{VarVol2019ep_2021}.
+
+In particular, suppose that a continuous function $f:[0,1]\to\R$ has at most two points of intersection with a fixed cone of lines and its parallel shifts. After careful geometric considerations, we were able to find that such $f$'s graph actually has both Lipschitz and convex pieces.
+
+Second, let us assume that a planar curve $γ$ has a finite (contrasted with countable) intersection with a certain cone of lines and all its shifts. As I mentioned above, this would mean that $γ$ necessarily has dimension at most $1$. However, Volberg and I showed that the $\cH^1$ measure of $γ$ (contrasted with its dimension) is in fact $σ$-finite, and additionally provided an exact estimate for the $\cH^1$ measure is its pieces.
+
+%
+%\section{Hamming Cube Problems}	\label{sec:Hamming}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection{title}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%\section{Julia Sets and Cantor Repellers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection{title}	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\printbibliography
+
+\end{document}

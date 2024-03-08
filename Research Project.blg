@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'Research Project.blg'
+[135] biber-MSWIN32:340> INFO - === 
+[180] Biber.pm:415> INFO - Reading 'Research Project.bcf'
+[329] Biber.pm:952> INFO - Found 25 citekeys in bib section 0
+[347] Biber.pm:4340> INFO - Processing section 0
+[362] Biber.pm:4531> INFO - Looking for bibtex format file '../../var_vol_bibliography.bib' for section 0
+[440] bibtex.pm:1689> INFO - LaTeX decoding ...
+[588] bibtex.pm:1494> INFO - Found BibTeX data source '../../var_vol_bibliography.bib'
+[789] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[789] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[789] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[789] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[821] bbl.pm:654> INFO - Writing 'Research Project.bbl' with encoding 'UTF-8'
+[836] bbl.pm:757> INFO - Output to Research Project.bbl

@@ -1,0 +1,1004 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{BarBelBorFed2017}{online}{}
+      \name{author}{4}{}{%
+        {{hash=93f3c35fe7f567f99331a5d2356b388b}{%
+           family={Baranov},
+           familyi={B\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5167ded9af91abd189973dd19bec799c}{%
+           family={Belov},
+           familyi={B\bibinitperiod},
+           given={Yurii},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=85e67fada51f2dfa2814683542e2f1c1}{%
+           family={Borichev},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=831f4f1bd8a564b1b963f338248c334f}{%
+           family={Fedorovskiy},
+           familyi={F\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{0c84b836df99ff21bfdbcbac64900cc6}
+      \strng{fullhash}{c37ba379e41cd6e03b821912b1ee82d6}
+      \strng{bibnamehash}{c37ba379e41cd6e03b821912b1ee82d6}
+      \strng{authorbibnamehash}{c37ba379e41cd6e03b821912b1ee82d6}
+      \strng{authornamehash}{0c84b836df99ff21bfdbcbac64900cc6}
+      \strng{authorfullhash}{c37ba379e41cd6e03b821912b1ee82d6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Motivated by a problem in approximation theory, we find a necessary and sufficient condition for a model (backward shift invariant) subspace $K_\varTheta = H^2\ominus \varTheta H^2$ of the Hardy space $H^2$ to contain a bounded univalent function.}
+      \field{day}{16}
+      \field{eprintclass}{math.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{title}{Univalent functions in model spaces: revisited}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 1705.05930v2
+      \endverb
+      \verb{file}
+      \verb :http\://arxiv.org/pdf/1705.05930v2:PDF
+      \endverb
+      \keyw{math.CV,30J15,30C55}
+    \endentry
+    \entry{BarFed2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=93f3c35fe7f567f99331a5d2356b388b}{%
+           family={Baranov},
+           familyi={B\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=831f4f1bd8a564b1b963f338248c334f}{%
+           family={Fedorovskiy},
+           familyi={F\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{5177e30d74e56038541346d2ac349287}
+      \strng{fullhash}{5177e30d74e56038541346d2ac349287}
+      \strng{bibnamehash}{5177e30d74e56038541346d2ac349287}
+      \strng{authorbibnamehash}{5177e30d74e56038541346d2ac349287}
+      \strng{authornamehash}{5177e30d74e56038541346d2ac349287}
+      \strng{authorfullhash}{5177e30d74e56038541346d2ac349287}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sbornik: Mathematics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Boundary regularity of Nevanlinna domains and univalent functions in model subspaces}
+      \field{volume}{202}
+      \field{year}{2011}
+      \field{pages}{1723\bibrangedash 1740}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1070/sm2011v202n12abeh004205
+      \endverb
+    \endentry
+    \entry{BatVol2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7a4c842895b2d25299142b2b9f619972}{%
+           family={Bateman},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Press of Boston}%
+      }
+      \strng{namehash}{fc412e6a4dbb5e4f378e6df242142ca4}
+      \strng{fullhash}{fc412e6a4dbb5e4f378e6df242142ca4}
+      \strng{bibnamehash}{fc412e6a4dbb5e4f378e6df242142ca4}
+      \strng{authorbibnamehash}{fc412e6a4dbb5e4f378e6df242142ca4}
+      \strng{authornamehash}{fc412e6a4dbb5e4f378e6df242142ca4}
+      \strng{authorfullhash}{fc412e6a4dbb5e4f378e6df242142ca4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Research Letters}
+      \field{number}{5}
+      \field{title}{An estimate from below for the Buffon needle probability of the four-corner Cantor set}
+      \field{volume}{17}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{959\bibrangedash 967}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.4310/mrl.2010.v17.n5.a12
+      \endverb
+    \endentry
+    \entry{BelFed2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a947f3a18679aed85c1ff46658293be3}{%
+           family={Belov},
+           familyi={B\bibinitperiod},
+           given={Yu.\bibnamedelimi S.},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e07de424bc368db433dc420c041e621b}{%
+           family={Fedorovskiy},
+           familyi={F\bibinitperiod},
+           given={K.\bibnamedelimi Yu.},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{49d4f940d94b838704e893af05db7d11}
+      \strng{fullhash}{49d4f940d94b838704e893af05db7d11}
+      \strng{bibnamehash}{49d4f940d94b838704e893af05db7d11}
+      \strng{authorbibnamehash}{49d4f940d94b838704e893af05db7d11}
+      \strng{authornamehash}{49d4f940d94b838704e893af05db7d11}
+      \strng{authorfullhash}{49d4f940d94b838704e893af05db7d11}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Russian Mathematical Surveys}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Model spaces containing univalent functions}
+      \field{volume}{73}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{172\bibrangedash 174}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1070/rm9807
+      \endverb
+    \endentry
+    \entry{BelBorFed2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5167ded9af91abd189973dd19bec799c}{%
+           family={Belov},
+           familyi={B\bibinitperiod},
+           given={Yurii},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=85e67fada51f2dfa2814683542e2f1c1}{%
+           family={Borichev},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=831f4f1bd8a564b1b963f338248c334f}{%
+           family={Fedorovskiy},
+           familyi={F\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{9ebe6953973b8c9bf7358129825b6d74}
+      \strng{fullhash}{9ebe6953973b8c9bf7358129825b6d74}
+      \strng{bibnamehash}{9ebe6953973b8c9bf7358129825b6d74}
+      \strng{authorbibnamehash}{9ebe6953973b8c9bf7358129825b6d74}
+      \strng{authornamehash}{9ebe6953973b8c9bf7358129825b6d74}
+      \strng{authorfullhash}{9ebe6953973b8c9bf7358129825b6d74}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Functional Analysis}
+      \field{month}{10}
+      \field{number}{8}
+      \field{title}{Nevanlinna domains with large boundaries}
+      \field{volume}{277}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{2617\bibrangedash 2643}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1016/j.jfa.2018.12.015
+      \endverb
+    \endentry
+    \entry{BonVol2010_circular_favard}{article}{}
+      \name{author}{2}{}{%
+        {{hash=70a8ce82b226cb9130b835e53af3ff0f}{%
+           family={Bond},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{396ba814a4810ae69abfa7494c0b85ca}
+      \strng{fullhash}{396ba814a4810ae69abfa7494c0b85ca}
+      \strng{bibnamehash}{396ba814a4810ae69abfa7494c0b85ca}
+      \strng{authorbibnamehash}{396ba814a4810ae69abfa7494c0b85ca}
+      \strng{authornamehash}{396ba814a4810ae69abfa7494c0b85ca}
+      \strng{authorfullhash}{396ba814a4810ae69abfa7494c0b85ca}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geometric Analysis}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Circular Favard Length of the Four-Corner Cantor Set}
+      \field{volume}{21}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{40\bibrangedash 55}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s12220-010-9141-4
+      \endverb
+    \endentry
+    \entry{Car1952}{article}{}
+      \name{author}{1}{}{%
+        {{hash=40cbe052f687ef31356587fb6d5235fd}{%
+           family={Carleson},
+           familyi={C\bibinitperiod},
+           given={Lennart},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Press of Boston}%
+      }
+      \strng{namehash}{40cbe052f687ef31356587fb6d5235fd}
+      \strng{fullhash}{40cbe052f687ef31356587fb6d5235fd}
+      \strng{bibnamehash}{40cbe052f687ef31356587fb6d5235fd}
+      \strng{authorbibnamehash}{40cbe052f687ef31356587fb6d5235fd}
+      \strng{authornamehash}{40cbe052f687ef31356587fb6d5235fd}
+      \strng{authorfullhash}{40cbe052f687ef31356587fb6d5235fd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Mathematica}
+      \field{number}{0}
+      \field{title}{Sets of uniqueness for functions regular in the unit circle}
+      \field{volume}{87}
+      \field{year}{1952}
+      \true{nocite}
+      \field{pages}{325\bibrangedash 345}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/bf02392289
+      \endverb
+    \endentry
+    \entry{CarParFed2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8280e59c5bc2c9d3d53c66713c7728ee}{%
+           family={Carmona},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=651d80b26610be7dfdac08d95fd0db01}{%
+           family={Paramonov},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e07de424bc368db433dc420c041e621b}{%
+           family={Fedorovskiy},
+           familyi={F\bibinitperiod},
+           given={K.\bibnamedelimi Yu},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{10c722d3e1e06caa5b0a392404a2c9e2}
+      \strng{fullhash}{10c722d3e1e06caa5b0a392404a2c9e2}
+      \strng{bibnamehash}{10c722d3e1e06caa5b0a392404a2c9e2}
+      \strng{authorbibnamehash}{10c722d3e1e06caa5b0a392404a2c9e2}
+      \strng{authornamehash}{10c722d3e1e06caa5b0a392404a2c9e2}
+      \strng{authorfullhash}{10c722d3e1e06caa5b0a392404a2c9e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sbornik: Mathematics}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{On uniform approximation by polyanalytic polynomials and the Dirichlet problem for bianalytic functions}
+      \field{volume}{193}
+      \field{year}{2002}
+      \field{pages}{1469\bibrangedash 1492}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1070/sm2002v193n10abeh000690
+      \endverb
+    \endentry
+    \entry{CimRos2000}{book}{}
+      \name{author}{2}{}{%
+        {{hash=ebb56adb7e77b407c2da0df427dac7e3}{%
+           family={Cima},
+           familyi={C\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=de87ae2e4a0b8ca877ad42d8662f8695}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{c7068c3bffb0ed1c0ef4b44c2074e0f6}
+      \strng{fullhash}{c7068c3bffb0ed1c0ef4b44c2074e0f6}
+      \strng{bibnamehash}{c7068c3bffb0ed1c0ef4b44c2074e0f6}
+      \strng{authorbibnamehash}{c7068c3bffb0ed1c0ef4b44c2074e0f6}
+      \strng{authornamehash}{c7068c3bffb0ed1c0ef4b44c2074e0f6}
+      \strng{authorfullhash}{c7068c3bffb0ed1c0ef4b44c2074e0f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{The Backward Shift on the Hardy Space}
+      \field{year}{2000}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1090/surv/079
+      \endverb
+    \endentry
+    \entry{ClaDavTay2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=30cbb66f1b3de17f6d85650b0054bf69}{%
+           family={Cladek},
+           familyi={C\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1a80fb011724cfcd0ed84c613cdf2c09}{%
+           family={Davey},
+           familyi={D\bibinitperiod},
+           given={Blair},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3a7fdb19fda2ea5d7df483201c6c32fa}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Krystal},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Indiana University Mathematics Journal}%
+      }
+      \strng{namehash}{bd5889035872f1c168386a10b5079eff}
+      \strng{fullhash}{bd5889035872f1c168386a10b5079eff}
+      \strng{bibnamehash}{bd5889035872f1c168386a10b5079eff}
+      \strng{authorbibnamehash}{bd5889035872f1c168386a10b5079eff}
+      \strng{authornamehash}{bd5889035872f1c168386a10b5079eff}
+      \strng{authorfullhash}{bd5889035872f1c168386a10b5079eff}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Indiana University Mathematics Journal}
+      \field{number}{3}
+      \field{title}{Upper and lower bounds on the rate of decay of the Favard curve length for the four-corner Cantor set}
+      \field{volume}{71}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{1003\bibrangedash 1025}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1512/iumj.2022.71.8951
+      \endverb
+    \endentry
+    \entry{DyaKha2006}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=20297153c39d6328cbe3ad26bf718330}{%
+           family={Dyakonov},
+           familyi={D\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c6b2764033674cf870d53f9b75edb7a5}{%
+           family={Khavinson},
+           familyi={K\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{06dd48c8ecd3d1aae83a31439c93acae}
+      \strng{fullhash}{06dd48c8ecd3d1aae83a31439c93acae}
+      \strng{bibnamehash}{06dd48c8ecd3d1aae83a31439c93acae}
+      \strng{authorbibnamehash}{06dd48c8ecd3d1aae83a31439c93acae}
+      \strng{authornamehash}{06dd48c8ecd3d1aae83a31439c93acae}
+      \strng{authorfullhash}{06dd48c8ecd3d1aae83a31439c93acae}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Smooth functions in star-invariant subspaces}
+      \field{year}{2006}
+      \field{pages}{59\bibrangedash 66}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1090/conm/393/07371
+      \endverb
+    \endentry
+    \entry{Fed2006}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e07de424bc368db433dc420c041e621b}{%
+           family={Fedorovskiy},
+           familyi={F\bibinitperiod},
+           given={K.\bibnamedelimi Yu.},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pleiades Publishing Ltd}%
+      }
+      \strng{namehash}{e07de424bc368db433dc420c041e621b}
+      \strng{fullhash}{e07de424bc368db433dc420c041e621b}
+      \strng{bibnamehash}{e07de424bc368db433dc420c041e621b}
+      \strng{authorbibnamehash}{e07de424bc368db433dc420c041e621b}
+      \strng{authornamehash}{e07de424bc368db433dc420c041e621b}
+      \strng{authorfullhash}{e07de424bc368db433dc420c041e621b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Steklov Institute of Mathematics}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{On some properties and examples of Nevanlinna domains}
+      \field{volume}{253}
+      \field{year}{2006}
+      \field{pages}{186\bibrangedash 194}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1134/s0081543806020155
+      \endverb
+    \endentry
+    \entry{JerKen1982}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8da49e50b3d276bf727a5286a6f7b9c3}{%
+           family={Jerison},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=63916c5f9dcb302349c8ea095c153629}{%
+           family={Kenig},
+           familyi={K\bibinitperiod},
+           given={Carlos\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{332ff5f82490272f3f9579e91b2bb02e}
+      \strng{fullhash}{332ff5f82490272f3f9579e91b2bb02e}
+      \strng{bibnamehash}{332ff5f82490272f3f9579e91b2bb02e}
+      \strng{authorbibnamehash}{332ff5f82490272f3f9579e91b2bb02e}
+      \strng{authornamehash}{332ff5f82490272f3f9579e91b2bb02e}
+      \strng{authorfullhash}{332ff5f82490272f3f9579e91b2bb02e}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Boundary behavior of harmonic functions in non-tangentially accessible domains}
+      \field{volume}{46}
+      \field{year}{1982}
+      \field{pages}{80\bibrangedash 147}
+      \range{pages}{68}
+      \verb{doi}
+      \verb 10.1016/0001-8708(82)90055-x
+      \endverb
+    \endentry
+    \entry{LiaTreVol2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c82ae9c60ff4b786313a1c23f81d203c}{%
+           family={Liaw},
+           familyi={L\bibinitperiod},
+           given={Constanze},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6690148bb8ca349faa89aa2512083611}{%
+           family={Treil},
+           familyi={T\bibinitperiod},
+           given={Sergei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press ({OUP})}%
+      }
+      \strng{namehash}{a2bb978264b5c045843327ce067f3f53}
+      \strng{fullhash}{a2bb978264b5c045843327ce067f3f53}
+      \strng{bibnamehash}{a2bb978264b5c045843327ce067f3f53}
+      \strng{authorbibnamehash}{a2bb978264b5c045843327ce067f3f53}
+      \strng{authornamehash}{a2bb978264b5c045843327ce067f3f53}
+      \strng{authorfullhash}{a2bb978264b5c045843327ce067f3f53}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Mathematics Research Notices}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Dimension of the Exceptional Set in the Aronszajn-Donoghue Theorem for Finite Rank Perturbations}
+      \field{volume}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{3297\bibrangedash 3307}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/imrn/rnaa281
+      \endverb
+    \endentry
+    \entry{Mar1954}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5bd68c80dd211b7a1010dc541a5843af}{%
+           family={Marstrand},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{5bd68c80dd211b7a1010dc541a5843af}
+      \strng{fullhash}{5bd68c80dd211b7a1010dc541a5843af}
+      \strng{bibnamehash}{5bd68c80dd211b7a1010dc541a5843af}
+      \strng{authorbibnamehash}{5bd68c80dd211b7a1010dc541a5843af}
+      \strng{authornamehash}{5bd68c80dd211b7a1010dc541a5843af}
+      \strng{authorfullhash}{5bd68c80dd211b7a1010dc541a5843af}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{Some Fundamental Geometrical Properties of Plane Sets of Fractional Dimensions}
+      \field{volume}{s3-4}
+      \field{year}{1954}
+      \field{pages}{257\bibrangedash 302}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1112/plms/s3-4.1.257
+      \endverb
+    \endentry
+    \entry{Mat1975}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6e99a4a941a43fb2726c25eba5024bd7}{%
+           family={Mattila},
+           familyi={M\bibinitperiod},
+           given={Pertti},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Finnish Academy of Science}%
+        {Letters}%
+      }
+      \strng{namehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{fullhash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{bibnamehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{authorbibnamehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{authornamehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{authorfullhash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annales Academiae Scientiarum Fennicae Series A I Mathematica}
+      \field{title}{Hausdorff dimension, orthogonal projections and intersections with planes}
+      \field{volume}{1}
+      \field{year}{1975}
+      \field{pages}{227\bibrangedash 244}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.5186/aasfm.1975.0110
+      \endverb
+    \endentry
+    \entry{Mat1990}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6e99a4a941a43fb2726c25eba5024bd7}{%
+           family={Mattila},
+           familyi={M\bibinitperiod},
+           given={Pertti},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Indiana University Mathematics Department}%
+      }
+      \strng{namehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{fullhash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{bibnamehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{authorbibnamehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{authornamehash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \strng{authorfullhash}{6e99a4a941a43fb2726c25eba5024bd7}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Indiana University Mathematics Journal}
+      \field{number}{1}
+      \field{title}{Orthogonal Projections, Riesz Capacities, and Minkowski Content}
+      \field{volume}{39}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \field{pages}{185\bibrangedash 198}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/24895440
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/24895440
+      \endverb
+    \endentry
+    \entry{NazPerVol2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=42dad3fef2d8e40acd40a6b226f1d6f6}{%
+           family={Nazarov},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=40e0f66d18da16c33ac8b1a8b8e17036}{%
+           family={Peres},
+           familyi={P\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ba7c4c216a08535741cdaa33586f4553}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society ({AMS})}%
+      }
+      \strng{namehash}{3aa180e3473000d6b57ea749d2ecf51b}
+      \strng{fullhash}{3aa180e3473000d6b57ea749d2ecf51b}
+      \strng{bibnamehash}{3aa180e3473000d6b57ea749d2ecf51b}
+      \strng{authorbibnamehash}{3aa180e3473000d6b57ea749d2ecf51b}
+      \strng{authornamehash}{3aa180e3473000d6b57ea749d2ecf51b}
+      \strng{authorfullhash}{3aa180e3473000d6b57ea749d2ecf51b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{St. Petersburg Mathematical Journal}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{The power law for the Buffon needle probability of the four-corner Cantor set}
+      \field{volume}{22}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{61\bibrangedash 61}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1090/s1061-0022-2010-01133-6
+      \endverb
+    \endentry
+    \entry{PerSol2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=be791fcf2bac698f7a6b715cdf5d5d51}{%
+           family={Peres},
+           familyi={P\bibinitperiod},
+           given={Yuval},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4fddbdeaaf67be15b1f0cc016c13c21c}{%
+           family={Solomyak},
+           familyi={S\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mathematical Sciences Publishers}%
+      }
+      \strng{namehash}{59e25888bb24c235f116471e53c7edcb}
+      \strng{fullhash}{59e25888bb24c235f116471e53c7edcb}
+      \strng{bibnamehash}{59e25888bb24c235f116471e53c7edcb}
+      \strng{authorbibnamehash}{59e25888bb24c235f116471e53c7edcb}
+      \strng{authornamehash}{59e25888bb24c235f116471e53c7edcb}
+      \strng{authorfullhash}{59e25888bb24c235f116471e53c7edcb}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pacific Journal of Mathematics}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{How likely is Buffon's needle to fall near a planar Cantor set?}
+      \field{volume}{204}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{473\bibrangedash 496}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.2140/pjm.2002.204.473
+      \endverb
+    \endentry
+    \entry{Sak1991}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ad864fb5e52327bb3f587e50bc19dbfa}{%
+           family={Sakai},
+           familyi={S\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Press of Boston}%
+      }
+      \strng{namehash}{ad864fb5e52327bb3f587e50bc19dbfa}
+      \strng{fullhash}{ad864fb5e52327bb3f587e50bc19dbfa}
+      \strng{bibnamehash}{ad864fb5e52327bb3f587e50bc19dbfa}
+      \strng{authorbibnamehash}{ad864fb5e52327bb3f587e50bc19dbfa}
+      \strng{authornamehash}{ad864fb5e52327bb3f587e50bc19dbfa}
+      \strng{authorfullhash}{ad864fb5e52327bb3f587e50bc19dbfa}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Mathematica}
+      \field{number}{0}
+      \field{title}{Regularity of a boundary having a Schwarz function}
+      \field{volume}{166}
+      \field{year}{1991}
+      \field{pages}{263\bibrangedash 297}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1007/bf02398888
+      \endverb
+    \endentry
+    \entry{VarVol2021_note}{article}{}
+      \name{author}{2}{}{%
+        {{hash=99b4f36dc3712ab90cbb2376266de021}{%
+           family={Vardakis},
+           familyi={V\bibinitperiod},
+           given={Dimitris},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Académie des sciences, Paris}%
+      }
+      \strng{namehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{fullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{bibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorbibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authornamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorfullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \field{extraname}{1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1778-3569}
+      \field{journaltitle}{Comptes Rendus. Mathématique}
+      \field{number}{10}
+      \field{title}{Free boundary problems in the spirit of Sakai's theorem}
+      \field{volume}{359}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{1233\bibrangedash 1238}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.5802/crmath.259
+      \endverb
+    \endentry
+    \entry{VarVol2021ep_2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=99b4f36dc3712ab90cbb2376266de021}{%
+           family={Vardakis},
+           familyi={V\bibinitperiod},
+           given={Dimitris},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{fullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{bibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorbibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authornamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorfullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \field{extraname}{2}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A Schwarz function on an open domain $\Omega$ is a holomorphic function satisfying $S(z)=\overline{z}$ on $\Gamma$, which is part of the boundary of $\Omega$. Sakai in 1991 gave a complete characterization of the boundary of a domain admitting a Schwarz function. In fact, if $\Omega$ is simply connected and $\Gamma=\partial\Omega\cap D(\zeta,r)$, then $\Gamma$ has to be regular real analytic. Here we try to describe $\Gamma$ when the boundary condition is relaxed. In particular, we are interested in three different scenarios over a simply connected domain $\Omega$: 1) When $f_1(z)=\overline{z}f_2(z)$ on $\Gamma$, with $f_1,f_2$ holomorphic and continuous up to the boundary, 2) when $\mathcal{U}/\mathcal{V}$ equals certain real analytic function on $\Gamma$ with $\mathcal{U},\mathcal{V}$ positive and harmonic on $\Omega$ and vanishing on $\Gamma$, and 3) when $S(z)=\Phi(z,\overline{z})$ on $\Gamma$, with $\Phi$ a holomorphic function of two variables. It turns out the boundary piece $\Gamma$ can be, respectively, anything from just $C^1$ to real analytic to, regular except finitely many points, or regular except for a measure zero set.}
+      \field{day}{31}
+      \field{eprintclass}{math.CV}
+      \field{eprinttype}{arXiv}
+      \field{issue}{3}
+      \field{journaltitle}{Algebra i Analiz}
+      \field{month}{5}
+      \field{title}{Free boundary problems via Sakai's theorem}
+      \field{volume}{34}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{252\bibrangedash 275}
+      \range{pages}{24}
+      \verb{eprint}
+      \verb 2105.14570v3
+      \endverb
+      \verb{urlraw}
+      \verb http://mi.mathnet.ru/eng/aa/v34/i3/p252
+      \endverb
+      \verb{url}
+      \verb http://mi.mathnet.ru/eng/aa/v34/i3/p252
+      \endverb
+      \keyw{free boundary problems,Schwarz function,real analytic curves,pseudocontinuation,positive harmonic functions,boundary Harnack principle,Nevanlinna domains.}
+    \endentry
+    \entry{VarVol2019ep_2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=99b4f36dc3712ab90cbb2376266de021}{%
+           family={Vardakis},
+           familyi={V\bibinitperiod},
+           given={Dimitris},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \strng{namehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{fullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{bibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorbibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authornamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorfullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \field{extraname}{3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The local Lipschitz property is shown for the graph avoiding multiple point intersection with lines directed in a given cone. The assumption is much stronger than those of Marstrand's well-known theorem, but the conclusion is much stronger too. Additionally, a continuous curve with a similar property is $\sigma$-finite with respect to Hausdorff length and an estimate on the Hausdorff measure of each ``piece'' is found.}
+      \field{day}{15}
+      \field{eprintclass}{math.AP}
+      \field{eprinttype}{arXiv}
+      \field{issue}{6}
+      \field{journaltitle}{Algebra i Analiz}
+      \field{month}{3}
+      \field{title}{Geometry of planar curves intersecting many lines in a few points}
+      \field{volume}{33}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{214\bibrangedash 234}
+      \range{pages}{21}
+      \verb{eprint}
+      \verb 1909.03203v2
+      \endverb
+      \verb{urlraw}
+      \verb http://mi.mathnet.ru/eng/aa/v33/i6/p214
+      \endverb
+      \verb{url}
+      \verb http://mi.mathnet.ru/eng/aa/v33/i6/p214
+      \endverb
+      \keyw{Hausdorff dimension,Lipschitz function,Marstrand's theorem.}
+    \endentry
+    \entry{VarVol2022ep}{article}{}
+      \name{author}{2}{}{%
+        {{hash=99b4f36dc3712ab90cbb2376266de021}{%
+           family={Vardakis},
+           familyi={V\bibinitperiod},
+           given={Dimitris},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8a6a2638428ecf7861423a02b9c619b2}{%
+           family={Volberg},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{fullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{bibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorbibnamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authornamehash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \strng{authorfullhash}{a04bf3637f11cd245e5295e01b25bcbb}
+      \field{extraname}{4}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider a model of randomness for self-similar Cantor sets of finite and positive $1$-Hausdorff measure. We find the sharp rate of decay of the probability that a Buffon needle lands $\delta$-close to a Cantor set of this particular randomness. Two quite different models of randomness for Cantor sets, by Peres and Solomyak, and by Shiwen Zhang, appear to have the same order of decay for the Buffon needle probability: $\frac{c}{\log\frac{1}{\delta}}$. In this note, we prove the same rate of decay for a third model of randomness, which asserts a vague feeling that any "reasonable" random Cantor set of positive and finite length will have Favard length of order $\frac{c}{\log\frac{1}{\delta}}$ for its $\delta$-neighbourhood. The estimate from below was obtained long ago by Mattila.}
+      \field{day}{29}
+      \field{eprintclass}{math.AP}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{note}{Submitted in: Journal of Mathematical Analysis and Applications}
+      \field{title}{The Buffon's needle problem for random planar disk-like Cantor sets}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2205.14559
+      \endverb
+      \keyw{math.AP,math.CA,math.PR}
+    \endentry
+    \entry{Zha2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5c661cea2572654ea4e14bc501167636}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shiwen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {European Mathematical Society - {EMS} - Publishing House {GmbH}}%
+      }
+      \strng{namehash}{5c661cea2572654ea4e14bc501167636}
+      \strng{fullhash}{5c661cea2572654ea4e14bc501167636}
+      \strng{bibnamehash}{5c661cea2572654ea4e14bc501167636}
+      \strng{authorbibnamehash}{5c661cea2572654ea4e14bc501167636}
+      \strng{authornamehash}{5c661cea2572654ea4e14bc501167636}
+      \strng{authorfullhash}{5c661cea2572654ea4e14bc501167636}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Matemática Iberoamericana}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{The exact power law for Buffon's needle landing near some random Cantor sets}
+      \field{volume}{36}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{537\bibrangedash 548}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.4171/rmi/1138
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

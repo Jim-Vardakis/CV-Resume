@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'Progress Report.blg'
+[171] biber-MSWIN32:340> INFO - === 
+[225] Biber.pm:415> INFO - Reading 'Progress Report.bcf'
+[402] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
+[426] Biber.pm:4340> INFO - Processing section 0
+[445] Biber.pm:4531> INFO - Looking for bibtex format file '../var_vol_bibliography.bib' for section 0
+[539] bibtex.pm:1689> INFO - LaTeX decoding ...
+[696] bibtex.pm:1494> INFO - Found BibTeX data source '../var_vol_bibliography.bib'
+[864] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[864] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[865] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[865] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[893] bbl.pm:654> INFO - Writing 'Progress Report.bbl' with encoding 'UTF-8'
+[901] bbl.pm:757> INFO - Output to Progress Report.bbl
