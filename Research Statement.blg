@@ -1,15 +1,17 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'Research Statement.blg'
-[144] biber-MSWIN32:340> INFO - === 
-[194] Biber.pm:415> INFO - Reading 'Research Statement.bcf'
-[350] Biber.pm:952> INFO - Found 25 citekeys in bib section 0
-[370] Biber.pm:4340> INFO - Processing section 0
-[385] Biber.pm:4531> INFO - Looking for bibtex format file '../var_vol_bibliography.bib' for section 0
-[461] bibtex.pm:1689> INFO - LaTeX decoding ...
-[601] bibtex.pm:1494> INFO - Found BibTeX data source '../var_vol_bibliography.bib'
-[829] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[829] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[829] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[829] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[863] bbl.pm:654> INFO - Writing 'Research Statement.bbl' with encoding 'UTF-8'
-[880] bbl.pm:757> INFO - Output to Research Statement.bbl
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Research Statement.blg'
+[287] biber-MSWIN64:340> INFO - === 
+[397] Biber.pm:419> INFO - Reading 'Research Statement.bcf'
+[557] Biber.pm:979> INFO - Found 25 citekeys in bib section 0
+[574] Biber.pm:4419> INFO - Processing section 0
+[606] Biber.pm:4610> INFO - Looking for bibtex file '../var_vol_bibliography.bib' for section 0
+[672] bibtex.pm:1713> INFO - LaTeX decoding ...
+[797] bibtex.pm:1519> INFO - Found BibTeX data source '../var_vol_bibliography.bib'
+[1002] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1002] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1002] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1002] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1064] bbl.pm:660> INFO - Writing 'Research Statement.bbl' with encoding 'UTF-8'
+[1076] bbl.pm:763> INFO - Output to Research Statement.bbl
+[1076] Biber.pm:131> WARN - I didn't find a database entry for 'VarVol2022ep' (section 0)
+[1076] Biber.pm:133> INFO - WARNINGS: 1

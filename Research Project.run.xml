@@ -80,7 +80,7 @@
       <file>"Research Project".bcf</file>
     </requires>
     <requires type="editable">
-      <file>../../var_vol_bibliography.bib</file>
+      <file>../var_vol_bibliography.bib</file>
     </requires>
   </external>
 </requests>
